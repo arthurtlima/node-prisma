@@ -1,13 +1,19 @@
-import fastify from 'fastify';
+import fastify from 'fastify'
+import { PrismaClient } from '@prisma/client'
 
-const app = fastify();
+const app = fastify()
+const prisma = new PrismaClient()
 
-app.get('/hello', async (request, reply) => {
-  return 'hello world' 
-});
+app.get('/users', async (request, reply) => {
+  const users = await prisma.user.findMany()
 
-app.listen({
+  return users
+})
+
+app
+  .listen({
     port: 3333,
-}).then(() => {
+  })
+  .then(() => {
     console.log('Server is running on port 3333')
-});
+  })
