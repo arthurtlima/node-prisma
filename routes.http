@@ -1,0 +1,28 @@
+###
+GET http://localhost:3333/memories
+
+###
+GET http://localhost:3333/memories/bda4c595-0e2d-4776-b9bc-6990d458f53b
+
+###
+POST http://localhost:3333/memories
+Content-Type: application/json
+
+{
+    "content": "test",
+    "coverUrl": "https://github.com/arthurtlima.png",
+    "isPublic": 1
+}
+
+###
+PUT  http://localhost:3333/memories/0c35c25b-506d-4e65-aa64-c88ff01c616c
+Content-Type: application/json
+
+{
+    "content": "olá ",
+    "coverUrl": "https://github.com/arthurtlima.png",
+    "isPublic": 1
+}
+
+###
+DELETE   http://localhost:3333/memories/0c35c25b-506d-4e65-aa64-c88ff01c616c
