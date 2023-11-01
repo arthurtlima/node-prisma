@@ -44,7 +44,7 @@ Open [http://localhost:3333](http://localhost:3333) with your browser to see the
 
 The following tools were used in the project's construction:
 
--   **[NodeJs](https://nodejs.org/pt-br/docs/guides/getting-started-guide)**
+-   **[NodeJs](https://nodejs.org/en)**
 -   **[Fastify](https://fastify.dev/)**
 -   **[Prisma](https://www.prisma.io/)**
 
